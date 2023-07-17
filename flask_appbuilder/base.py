@@ -167,9 +167,11 @@ class AppBuilder:
         app.config.setdefault("FAB_BASE_TEMPLATE", self.base_template)
         app.config.setdefault("FAB_STATIC_FOLDER", self.static_folder)
         app.config.setdefault("FAB_STATIC_URL_PATH", self.static_url_path)
+        app.config.setdefault("FAB_MAX_FORM_PARTS", 1000)
 
         self.app = app
 
+        self.app.request_class.max_form_parts = app.config.get("FAB_MAX_FORM_PARTS", 1000)
         self.base_template = app.config.get("FAB_BASE_TEMPLATE", self.base_template)
         self.static_folder = app.config.get("FAB_STATIC_FOLDER", self.static_folder)
         self.static_url_path = app.config.get(

@@ -320,7 +320,10 @@ Use config.py to configure the following parameters. By default it will use SQLL
 |                                        | validation for AUTH database users.        |   No      |
 |                                        | Default is False.                          |           |
 +----------------------------------------+--------------------------------------------+-----------+
-
+| FAB_MAX_FORM_PARTS                     | Max form parts for werkzeug                |           |
+|                                        |                                            |   No      |
+|                                        |                                            |           |
++----------------------------------------+--------------------------------------------+-----------+
 Note
 ----
 
