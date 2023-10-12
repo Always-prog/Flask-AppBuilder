@@ -285,7 +285,9 @@ msgstr "активация учетной записи"
 
 #: flask_appbuilder/security/registerviews.py:59
 msgid "Registration sent to your email"
-msgstr "Регистрация отправлены на электронную почту"
+msgstr ""
+"Регистрация завершена. Для активации учетной записи используйте ссылку, "
+"отправленную в письме на указанный при регистрации адрес электронной почты"
 
 #: flask_appbuilder/security/registerviews.py:61
 msgid "Not possible to register you at the moment, try again later"
@@ -293,7 +295,7 @@ msgstr "Не возможно зарегистрировать вас на да�
 
 #: flask_appbuilder/security/registerviews.py:63
 msgid "Registration not found"
-msgstr "Регистрация не найдено"
+msgstr "Регистрация не найдена"
 
 #: flask_appbuilder/security/registerviews.py:65
 msgid "Fill out the registration form"
@@ -595,7 +597,7 @@ msgstr "Группа полей"
 
 #: flask_appbuilder/templates/appbuilder/general/security/activation.html:7
 msgid "Your user is activated you can now proceed to login"
-msgstr "Ваш пользователь активирован теперь вы можете приступить к войдите"
+msgstr "Ваш пользователь активирован, вы можете приступить к входу в систему"
 
 #: flask_appbuilder/templates/appbuilder/general/security/login_db.html:19
 #: flask_appbuilder/templates/appbuilder/general/security/login_ldap.html:16
