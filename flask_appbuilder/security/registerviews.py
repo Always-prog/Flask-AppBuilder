@@ -3,7 +3,7 @@ __author__ = "Daniel Gaspar"
 import logging
 
 from flask import flash, redirect, request, session, url_for
-from flask_babel import lazy_gettext
+from flask_babel import lazy_gettext, get_locale
 
 from .forms import LoginForm_oid, RegisterUserDBForm, RegisterUserOIDForm
 from .. import const as c
@@ -67,6 +67,14 @@ class BaseRegisterUser(PublicFormView):
     form_title = lazy_gettext("Fill out the registration form")
     """ The form title """
 
+    def add_register_support_message(self):
+        locale_messages = self.appbuilder.app.config.get("REGISTER_SUPPORT_MESSAGES", {})
+        locale_current, locale_default = str(get_locale()), self.appbuilder.app.config.get("BABEL_DEFAULT_LOCALE")
+        message = locale_messages.get(locale_current, locale_messages.get(locale_default))
+        if message is None:
+            return
+        flash(as_unicode(message), "danger")
+
     def send_email(self, register_user):
         """
             Method for sending the registration Email to the user
@@ -114,6 +122,7 @@ class BaseRegisterUser(PublicFormView):
                 return register_user
             else:
                 flash(as_unicode(self.error_message), "danger")
+                self.add_register_support_message()
                 self.appbuilder.sm.del_register_user(register_user)
                 return None
 
@@ -128,6 +137,7 @@ class BaseRegisterUser(PublicFormView):
         if not reg:
             log.error(c.LOGMSG_ERR_SEC_NO_REGISTER_HASH, activation_hash)
             flash(as_unicode(self.false_error_message), "danger")
+            self.add_register_support_message()
             return redirect(self.appbuilder.get_url_for_index)
         if not self.appbuilder.sm.add_user(
             username=reg.username,
@@ -140,6 +150,7 @@ class BaseRegisterUser(PublicFormView):
             hashed_password=reg.password,
         ):
             flash(as_unicode(self.error_message), "danger")
+            self.add_register_support_message()
             return redirect(self.appbuilder.get_url_for_index)
         else:
             self.appbuilder.sm.del_register_user(reg)
