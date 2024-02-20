@@ -750,7 +750,7 @@ msgstr "Группа полей"
 #: flask_appbuilder/templates/appbuilder/general/model/edit.html:9
 #: flask_appbuilder/templates/appbuilder/general/model/show.html:9
 msgid "Detail"
-msgstr ""
+msgstr "Детали"
 
 #: flask_appbuilder/templates/appbuilder/general/security/activation.html:7
 msgid "Your user is activated you can now proceed to login"
