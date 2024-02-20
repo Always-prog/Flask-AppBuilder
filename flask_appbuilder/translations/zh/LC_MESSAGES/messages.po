@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-20 15:36+0500\n"
+"POT-Creation-Date: 2024-02-20 16:14+0500\n"
 "PO-Revision-Date: 2014-04-21 15:20+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh\n"
@@ -17,190 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
-
-#: examples/extendsecurity/app/sec_forms.py:10
-#: examples/extendsecurity2/app/sec_forms.py:10
-#: flask_appbuilder/security/forms.py:37 flask_appbuilder/security/forms.py:75
-#: flask_appbuilder/security/forms.py:114
-#: flask_appbuilder/security/views.py:155
-msgid "First Name"
-msgstr "名"
-
-#: examples/extendsecurity/app/sec_forms.py:13
-#: examples/extendsecurity2/app/sec_forms.py:13
-#: flask_appbuilder/security/forms.py:40 flask_appbuilder/security/views.py:172
-msgid "Write the user first name or names"
-msgstr "用户的名字"
-
-#: examples/extendsecurity/app/sec_forms.py:16
-#: examples/extendsecurity2/app/sec_forms.py:16
-#: flask_appbuilder/security/forms.py:43 flask_appbuilder/security/forms.py:80
-#: flask_appbuilder/security/forms.py:119
-#: flask_appbuilder/security/views.py:156
-msgid "Last Name"
-msgstr "姓"
-
-#: examples/extendsecurity/app/sec_forms.py:19
-#: examples/extendsecurity2/app/sec_forms.py:19
-#: flask_appbuilder/security/forms.py:46 flask_appbuilder/security/views.py:173
-msgid "Write the user last name"
-msgstr "用户的姓氏"
-
-#: examples/extendsecurity/app/sec_forms.py:22
-#: examples/extendsecurity2/app/sec_forms.py:22
-msgid "Emp. Number"
-msgstr ""
-
-#: examples/extendsecurity/app/sec_forms.py:25
-#: examples/extendsecurity2/app/sec_forms.py:25
-msgid "Employee Number"
-msgstr ""
-
-#: examples/extendsecurity/app/sec_views.py:14
-#: examples/extendsecurity/app/sec_views.py:39
-#: examples/extendsecurity2/app/sec_views.py:14
-#: examples/extendsecurity2/app/sec_views.py:39
-#: examples/mongo_extendedsecurity/app/mysecurity.py:37
-#: examples/mongo_extendedsecurity/app/mysecurity.py:62
-#: examples/quickhowto2/app/sec_views.py:14
-#: examples/quickhowto2/app/sec_views.py:39
-#: flask_appbuilder/security/views.py:194
-#: flask_appbuilder/security/views.py:219
-msgid "User info"
-msgstr "用户信息"
-
-#: examples/extendsecurity/app/sec_views.py:18
-#: examples/extendsecurity/app/sec_views.py:43
-#: examples/extendsecurity2/app/sec_views.py:18
-#: examples/extendsecurity2/app/sec_views.py:43
-#: examples/mongo_extendedsecurity/app/mysecurity.py:41
-#: examples/mongo_extendedsecurity/app/mysecurity.py:66
-#: examples/quickhowto2/app/sec_views.py:18
-#: examples/quickhowto2/app/sec_views.py:43
-#: flask_appbuilder/security/views.py:198
-#: flask_appbuilder/security/views.py:223
-msgid "Personal Info"
-msgstr "个人信息"
-
-#: examples/extendsecurity/app/sec_views.py:22
-#: examples/extendsecurity2/app/sec_views.py:22
-#: examples/mongo_extendedsecurity/app/mysecurity.py:45
-#: examples/quickhowto2/app/sec_views.py:22
-#: flask_appbuilder/security/views.py:202
-msgid "Audit Info"
-msgstr "审计信息"
-
-#: examples/masterdetail/app/views.py:87 examples/quickhowto3/app/views.py:96
-msgid "List Groups"
-msgstr ""
-
-#: examples/masterdetail/app/views.py:88
-msgid "Manage Groups"
-msgstr ""
-
-#: examples/masterdetail/app/views.py:89 examples/quickhowto3/app/views.py:97
-msgid "List Contacts"
-msgstr ""
-
-#: examples/masterdetail/app/views.py:90 examples/quickhowto3/app/views.py:98
-msgid "Contacts Chart"
-msgstr ""
-
-#: examples/masterdetail/app/views.py:91 examples/quickhowto3/app/views.py:99
-msgid "Contacts Birth Chart"
-msgstr ""
-
-#: examples/oauth/app/forms.py:10
-msgid "Tweet message"
-msgstr ""
-
-#: examples/quickhowto2/app/forms.py:10 examples/quickhowto2/app/forms.py:15
-msgid "Test Field One"
-msgstr ""
-
-#: examples/quickhowto2/app/templates/list_angulajs.html:50
-#: examples/quickhowto2/app/templates/list_angulajs.html:108
-#: examples/quickhowto2/app/templates/list_angulajs.html:187
-#: flask_appbuilder/templates/appbuilder/general/lib.html:382
-msgid "Add a new record"
-msgstr "添加新记录"
-
-#: examples/quickhowto2/app/templates/list_angulajs.html:51
-#: examples/quickhowto2/app/templates/list_angulajs.html:131
-#: examples/quickhowto2/app/templates/list_angulajs.html:210
-#: flask_appbuilder/templates/appbuilder/general/lib.html:398
-msgid "Show record"
-msgstr "显示记录"
-
-#: examples/quickhowto2/app/templates/list_angulajs.html:52
-#: examples/quickhowto2/app/templates/list_angulajs.html:132
-#: examples/quickhowto2/app/templates/list_angulajs.html:211
-#: flask_appbuilder/templates/appbuilder/general/lib.html:390
-msgid "Edit record"
-msgstr "编辑记录"
-
-#: examples/quickhowto2/app/templates/list_angulajs.html:53
-#: examples/quickhowto2/app/templates/list_angulajs.html:133
-#: examples/quickhowto2/app/templates/list_angulajs.html:212
-#: flask_appbuilder/templates/appbuilder/general/lib.html:410
-msgid "Delete record"
-msgstr "删除记录"
-
-#: examples/quickhowto2/app/templates/list_angulajs.html:54
-#: examples/quickhowto2/app/templates/list_angulajs.html:110
-#: examples/quickhowto2/app/templates/list_angulajs.html:189
-#: flask_appbuilder/templates/appbuilder/general/lib.html:333
-msgid "Record Count"
-msgstr "记录数目"
-
-#: examples/quickhowto2/app/templates/list_angulajs.html:55
-#: examples/quickhowto2/app/templates/list_angulajs.html:105
-#: examples/quickhowto2/app/templates/list_angulajs.html:184
-#: flask_appbuilder/templates/appbuilder/general/lib.html:115
-msgid "Page size"
-msgstr "显示行数"
-
-#: examples/quickhowto2/app/templates/list_angulajs.html:67
-#: examples/quickhowto2/app/templates/list_angulajs.html:149
-#: flask_appbuilder/templates/appbuilder/general/widgets/search.html:8
-msgid "Add Filter"
-msgstr "添加过滤条件"
-
-#: examples/quickhowto2/app/templates/widgets/list.html:70
-#: flask_appbuilder/messages.py:14
-#: flask_appbuilder/templates/appbuilder/general/widgets/base_list.html:39
-#: flask_appbuilder/templates/appbuilder/general/widgets/list_carousel.html:50
-#: flask_appbuilder/templates/appbuilder/general/widgets/list_master.html:17
-msgid "No records found"
-msgstr "没有找到记录"
-
-#: examples/quickhowto2/app/templates/widgets/list_override.html:9
-#: flask_appbuilder/messages.py:10
-#: flask_appbuilder/templates/appbuilder/general/lib.html:373
-#: flask_appbuilder/templates/appbuilder/general/lib.html:374
-msgid "Back"
-msgstr "后退"
-
-#: examples/quicktemplates/app/templates/mybase.html:44
-#: flask_appbuilder/templates/appbuilder/baselib.html:116
-#: flask_appbuilder/templates/appbuilder/navbar_right.html:38
-msgid "Logout"
-msgstr "注销"
-
-#: examples/quicktemplates/app/templates/mybase.html:49
-#: flask_appbuilder/templates/appbuilder/baselib.html:122
-#: flask_appbuilder/templates/appbuilder/navbar_right.html:43
-msgid "Login"
-msgstr "登录"
-
-#: examples/simpleform/app/views.py:26
-msgid "My form View"
-msgstr ""
-
-#: examples/simpleform/app/templates/404.html:4
-#, fuzzy
-msgid "Page not found"
-msgstr "尚未注册"
 
 #: flask_appbuilder/const.py:126
 msgid "Access is Denied"
@@ -226,20 +42,31 @@ msgstr "请选择"
 msgid "Search"
 msgstr "搜索"
 
+#: flask_appbuilder/messages.py:10
+#: flask_appbuilder/templates/appbuilder/general/lib.html:373
+#: flask_appbuilder/templates/appbuilder/general/lib.html:374
+msgid "Back"
+msgstr "后退"
+
 #: flask_appbuilder/messages.py:11
 #: flask_appbuilder/templates/appbuilder/general/lib.html:313
 msgid "Save"
 msgstr "保存"
 
-#: flask_appbuilder/messages.py:12 venv/Lib/site-packages/flask_wtf/file.py:35
-#: venv/Lib/site-packages/wtforms/validators.py:294
-#: venv/Lib/site-packages/wtforms/validators.py:322
+#: flask_appbuilder/messages.py:12
 msgid "This field is required."
 msgstr "此字段是必需的"
 
 #: flask_appbuilder/messages.py:13
 msgid "Not a valid date value"
 msgstr "日期值无效"
+
+#: flask_appbuilder/messages.py:14
+#: flask_appbuilder/templates/appbuilder/general/widgets/base_list.html:39
+#: flask_appbuilder/templates/appbuilder/general/widgets/list_carousel.html:50
+#: flask_appbuilder/templates/appbuilder/general/widgets/list_master.html:17
+msgid "No records found"
+msgstr "没有找到记录"
 
 #: flask_appbuilder/upload.py:160 flask_appbuilder/upload.py:213
 msgid "Invalid file extension"
@@ -398,6 +225,26 @@ msgstr "记住我"
 #: flask_appbuilder/templates/appbuilder/general/security/login_ldap.html:27
 msgid "Password"
 msgstr "密码"
+
+#: flask_appbuilder/security/forms.py:37 flask_appbuilder/security/forms.py:75
+#: flask_appbuilder/security/forms.py:114
+#: flask_appbuilder/security/views.py:155
+msgid "First Name"
+msgstr "名"
+
+#: flask_appbuilder/security/forms.py:40 flask_appbuilder/security/views.py:172
+msgid "Write the user first name or names"
+msgstr "用户的名字"
+
+#: flask_appbuilder/security/forms.py:43 flask_appbuilder/security/forms.py:80
+#: flask_appbuilder/security/forms.py:119
+#: flask_appbuilder/security/views.py:156
+msgid "Last Name"
+msgstr "姓"
+
+#: flask_appbuilder/security/forms.py:46 flask_appbuilder/security/views.py:173
+msgid "Write the user last name"
+msgstr "用户的姓氏"
 
 #: flask_appbuilder/security/forms.py:53 flask_appbuilder/security/forms.py:91
 msgid ""
@@ -635,6 +482,20 @@ msgstr "用户的电子邮件，将被用于OID验证"
 msgid "Please rewrite the user's password to confirm"
 msgstr "请再输入一次用户密码"
 
+#: flask_appbuilder/security/views.py:194
+#: flask_appbuilder/security/views.py:219
+msgid "User info"
+msgstr "用户信息"
+
+#: flask_appbuilder/security/views.py:198
+#: flask_appbuilder/security/views.py:223
+msgid "Personal Info"
+msgstr "个人信息"
+
+#: flask_appbuilder/security/views.py:202
+msgid "Audit Info"
+msgstr "审计信息"
+
 #: flask_appbuilder/security/views.py:232
 msgid "Your user information"
 msgstr "用户信息"
@@ -699,6 +560,16 @@ msgstr "登录"
 msgid "Profile"
 msgstr "用户信息"
 
+#: flask_appbuilder/templates/appbuilder/baselib.html:116
+#: flask_appbuilder/templates/appbuilder/navbar_right.html:38
+msgid "Logout"
+msgstr "注销"
+
+#: flask_appbuilder/templates/appbuilder/baselib.html:122
+#: flask_appbuilder/templates/appbuilder/navbar_right.html:43
+msgid "Login"
+msgstr "登录"
+
 #: flask_appbuilder/templates/appbuilder/general/security/activation.html:5
 #: flask_appbuilder/templates/appbuilder/index.html:4
 msgid "Welcome"
@@ -712,21 +583,45 @@ msgstr "请确认"
 msgid "Actions"
 msgstr "操作"
 
+#: flask_appbuilder/templates/appbuilder/general/lib.html:115
+msgid "Page size"
+msgstr "显示行数"
+
 #: flask_appbuilder/templates/appbuilder/general/lib.html:135
 msgid "Order by"
 msgstr "排序"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:333
+msgid "Record Count"
+msgstr "记录数目"
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:382
+msgid "Add a new record"
+msgstr "添加新记录"
 
 #: flask_appbuilder/templates/appbuilder/general/lib.html:383
 msgid "Add"
 msgstr ""
 
+#: flask_appbuilder/templates/appbuilder/general/lib.html:390
+msgid "Edit record"
+msgstr "编辑记录"
+
 #: flask_appbuilder/templates/appbuilder/general/lib.html:391
 msgid "Edit"
 msgstr ""
 
+#: flask_appbuilder/templates/appbuilder/general/lib.html:398
+msgid "Show record"
+msgstr "显示记录"
+
 #: flask_appbuilder/templates/appbuilder/general/lib.html:399
 msgid "Show"
 msgstr ""
+
+#: flask_appbuilder/templates/appbuilder/general/lib.html:410
+msgid "Delete record"
+msgstr "删除记录"
 
 #: flask_appbuilder/templates/appbuilder/general/lib.html:412
 msgid "Delete"
@@ -796,468 +691,9 @@ msgstr "或在此处输入您的OpenID"
 msgid "Sign in using:"
 msgstr "通过以下方式登录："
 
-#: venv/Lib/site-packages/click/_termui_impl.py:496
-msgid "{editor}: Editing failed"
-msgstr ""
-
-#: venv/Lib/site-packages/click/_termui_impl.py:500
-msgid "{editor}: Editing failed: {e}"
-msgstr ""
-
-#: venv/Lib/site-packages/click/_unicodefun.py:19
-msgid ""
-"Click will abort further execution because Python was configured to use "
-"ASCII as encoding for the environment. Consult "
-"https://click.palletsprojects.com/unicode-support/ for mitigation steps."
-msgstr ""
-
-#: venv/Lib/site-packages/click/_unicodefun.py:55
-msgid ""
-"Additional information: on this system no suitable UTF-8 locales were "
-"discovered. This most likely requires resolving by reconfiguring the "
-"locale system."
-msgstr ""
-
-#: venv/Lib/site-packages/click/_unicodefun.py:64
-msgid ""
-"This system supports the C.UTF-8 locale which is recommended. You might "
-"be able to resolve your issue by exporting the following environment "
-"variables:"
-msgstr ""
-
-#: venv/Lib/site-packages/click/_unicodefun.py:74
-msgid ""
-"This system lists some UTF-8 supporting locales that you can pick from. "
-"The following suitable locales were discovered: {locales}"
-msgstr ""
-
-#: venv/Lib/site-packages/click/_unicodefun.py:92
-msgid ""
-"Click discovered that you exported a UTF-8 locale but the locale system "
-"could not pick up from it because it does not exist. The exported locale "
-"is {locale!r} but it is not supported."
-msgstr ""
-
-#: venv/Lib/site-packages/click/core.py:1095
-msgid "Aborted!"
-msgstr ""
-
-#: venv/Lib/site-packages/click/core.py:1279
-#: venv/Lib/site-packages/click/decorators.py:434
-msgid "Show this message and exit."
-msgstr ""
-
-#: venv/Lib/site-packages/click/core.py:1308
-#: venv/Lib/site-packages/click/core.py:1334
-msgid "(Deprecated) {text}"
-msgstr ""
-
-#: venv/Lib/site-packages/click/core.py:1351
-#, fuzzy
-msgid "Options"
-msgstr "操作"
-
-#: venv/Lib/site-packages/click/core.py:1377
-msgid "Got unexpected extra argument ({args})"
-msgid_plural "Got unexpected extra arguments ({args})"
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/Lib/site-packages/click/core.py:1389
-msgid "DeprecationWarning: The command {name!r} is deprecated."
-msgstr ""
-
-#: venv/Lib/site-packages/click/core.py:1607
-msgid "Commands"
-msgstr ""
-
-#: venv/Lib/site-packages/click/core.py:1639
-msgid "Missing command."
-msgstr ""
-
-#: venv/Lib/site-packages/click/core.py:1717
-msgid "No such command {name!r}."
-msgstr ""
-
-#: venv/Lib/site-packages/click/core.py:2258
-msgid "Value must be an iterable."
-msgstr ""
-
-#: venv/Lib/site-packages/click/core.py:2280
-msgid "Takes {nargs} values but 1 was given."
-msgid_plural "Takes {nargs} values but {len} were given."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/Lib/site-packages/click/core.py:2701
-msgid "env var: {var}"
-msgstr ""
-
-#: venv/Lib/site-packages/click/core.py:2724
-msgid "(dynamic)"
-msgstr ""
-
-#: venv/Lib/site-packages/click/core.py:2735
-msgid "default: {default}"
-msgstr ""
-
-#: venv/Lib/site-packages/click/core.py:2748
-msgid "required"
-msgstr ""
-
-#: venv/Lib/site-packages/click/decorators.py:339
-#, python-format
-msgid "%(prog)s, version %(version)s"
-msgstr ""
-
-#: venv/Lib/site-packages/click/decorators.py:403
-msgid "Show the version and exit."
-msgstr ""
-
-#: venv/Lib/site-packages/click/exceptions.py:43
-#: venv/Lib/site-packages/click/exceptions.py:79
-msgid "Error: {message}"
-msgstr ""
-
-#: venv/Lib/site-packages/click/exceptions.py:71
-msgid "Try '{command} {option}' for help."
-msgstr ""
-
-#: venv/Lib/site-packages/click/exceptions.py:120
-msgid "Invalid value: {message}"
-msgstr ""
-
-#: venv/Lib/site-packages/click/exceptions.py:122
-msgid "Invalid value for {param_hint}: {message}"
-msgstr ""
-
-#: venv/Lib/site-packages/click/exceptions.py:178
-msgid "Missing argument"
-msgstr ""
-
-#: venv/Lib/site-packages/click/exceptions.py:180
-msgid "Missing option"
-msgstr ""
-
-#: venv/Lib/site-packages/click/exceptions.py:182
-msgid "Missing parameter"
-msgstr ""
-
-#: venv/Lib/site-packages/click/exceptions.py:184
-msgid "Missing {param_type}"
-msgstr ""
-
-#: venv/Lib/site-packages/click/exceptions.py:191
-msgid "Missing parameter: {param_name}"
-msgstr ""
-
-#: venv/Lib/site-packages/click/exceptions.py:211
-msgid "No such option: {name}"
-msgstr ""
-
-#: venv/Lib/site-packages/click/exceptions.py:225
-msgid "Did you mean {possibility}?"
-msgid_plural "(Possible options: {possibilities})"
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/Lib/site-packages/click/exceptions.py:261
-msgid "unknown error"
-msgstr ""
-
-#: venv/Lib/site-packages/click/exceptions.py:268
-msgid "Could not open file {filename!r}: {message}"
-msgstr ""
-
-#: venv/Lib/site-packages/click/parser.py:231
-msgid "Argument {name!r} takes {nargs} values."
-msgstr ""
-
-#: venv/Lib/site-packages/click/parser.py:413
-msgid "Option {name!r} does not take a value."
-msgstr ""
-
-#: venv/Lib/site-packages/click/parser.py:473
-msgid "Option {name!r} requires an argument."
-msgid_plural "Option {name!r} requires {nargs} arguments."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/Lib/site-packages/click/shell_completion.py:315
-msgid "Shell completion is not supported for Bash versions older than 4.4."
-msgstr ""
-
-#: venv/Lib/site-packages/click/shell_completion.py:322
-msgid "Couldn't detect Bash version, shell completion is not supported."
-msgstr ""
-
-#: venv/Lib/site-packages/click/termui.py:160
-#, fuzzy
-msgid "Repeat for confirmation"
-msgstr "请确认"
-
-#: venv/Lib/site-packages/click/termui.py:176
-msgid "Error: The value you entered was invalid."
-msgstr ""
-
-#: venv/Lib/site-packages/click/termui.py:178
-msgid "Error: {e.message}"
-msgstr ""
-
-#: venv/Lib/site-packages/click/termui.py:188
-msgid "Error: The two entered values do not match."
-msgstr ""
-
-#: venv/Lib/site-packages/click/termui.py:244
-msgid "Error: invalid input"
-msgstr ""
-
-#: venv/Lib/site-packages/click/termui.py:795
-msgid "Press any key to continue..."
-msgstr ""
-
-#: venv/Lib/site-packages/click/types.py:258
-msgid ""
-"Choose from:\n"
-"\t{choices}"
-msgstr ""
-
-#: venv/Lib/site-packages/click/types.py:292
-msgid "{value!r} is not {choice}."
-msgid_plural "{value!r} is not one of {choices}."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/Lib/site-packages/click/types.py:382
-msgid "{value!r} does not match the format {format}."
-msgid_plural "{value!r} does not match the formats {formats}."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/Lib/site-packages/click/types.py:402
-msgid "{value!r} is not a valid {number_type}."
-msgstr ""
-
-#: venv/Lib/site-packages/click/types.py:458
-msgid "{value} is not in the range {range}."
-msgstr ""
-
-#: venv/Lib/site-packages/click/types.py:599
-msgid "{value!r} is not a valid boolean."
-msgstr ""
-
-#: venv/Lib/site-packages/click/types.py:623
-msgid "{value!r} is not a valid UUID."
-msgstr ""
-
-#: venv/Lib/site-packages/click/types.py:798
-#, fuzzy
-msgid "file"
-msgstr "用户信息"
-
-#: venv/Lib/site-packages/click/types.py:800
-#, fuzzy
-msgid "directory"
-msgstr "编辑记录"
-
-#: venv/Lib/site-packages/click/types.py:802
-msgid "path"
-msgstr ""
-
-#: venv/Lib/site-packages/click/types.py:848
-msgid "{name} {filename!r} does not exist."
-msgstr ""
-
-#: venv/Lib/site-packages/click/types.py:857
-msgid "{name} {filename!r} is a file."
-msgstr ""
-
-#: venv/Lib/site-packages/click/types.py:865
-msgid "{name} {filename!r} is a directory."
-msgstr ""
-
-#: venv/Lib/site-packages/click/types.py:873
-msgid "{name} {filename!r} is not writable."
-msgstr ""
-
-#: venv/Lib/site-packages/click/types.py:881
-msgid "{name} {filename!r} is not readable."
-msgstr ""
-
-#: venv/Lib/site-packages/click/types.py:947
-msgid "{len_type} values are required, but {len_value} was given."
-msgid_plural "{len_type} values are required, but {len_value} were given."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/Lib/site-packages/flask_wtf/file.py:69
-msgid "File does not have an approved extension: {extensions}"
-msgstr ""
-
-#: venv/Lib/site-packages/flask_wtf/file.py:77
-msgid "File does not have an approved extension."
-msgstr ""
-
-#: venv/Lib/site-packages/flask_wtf/file.py:112
-msgid "File must be between {min_size} and {max_size} bytes."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:87
-#, python-format
-msgid "Invalid field name '%s'."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:100
-#, python-format
-msgid "Field must be equal to %(other_name)s."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:146
-#, python-format
-msgid "Field must be at least %(min)d character long."
-msgid_plural "Field must be at least %(min)d characters long."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:152
-#, python-format
-msgid "Field cannot be longer than %(max)d character."
-msgid_plural "Field cannot be longer than %(max)d characters."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:158
-#, python-format
-msgid "Field must be exactly %(max)d character long."
-msgid_plural "Field must be exactly %(max)d characters long."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:164
-#, python-format
-msgid "Field must be between %(min)d and %(max)d characters long."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:217
-#, python-format
-msgid "Number must be at least %(min)s."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:220
-#, python-format
-msgid "Number must be at most %(max)s."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:223
-#, python-format
-msgid "Number must be between %(min)s and %(max)s."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:357
-msgid "Invalid input."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:416
-msgid "Invalid email address."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:454
-msgid "Invalid IP address."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:497
-msgid "Invalid Mac address."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:532
-msgid "Invalid URL."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:553
-msgid "Invalid UUID."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:586
-#, python-format
-msgid "Invalid value, must be one of: %(values)s."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/validators.py:621
-#, python-format
-msgid "Invalid value, can't be any of: %(values)s."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/csrf/core.py:96
-msgid "Invalid CSRF Token."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/csrf/session.py:63
-msgid "CSRF token missing."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/csrf/session.py:71
-msgid "CSRF failed."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/csrf/session.py:76
-msgid "CSRF token expired."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/fields/choices.py:132
-msgid "Invalid Choice: could not coerce."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/fields/choices.py:136
-#: venv/Lib/site-packages/wtforms/fields/choices.py:188
-msgid "Choices cannot be None."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/fields/choices.py:145
-#, fuzzy
-msgid "Not a valid choice."
-msgstr "选择无效"
-
-#: venv/Lib/site-packages/wtforms/fields/choices.py:181
-msgid "Invalid choice(s): one or more data inputs could not be coerced."
-msgstr ""
-
-#: venv/Lib/site-packages/wtforms/fields/choices.py:200
-#, python-format
-msgid "'%(value)s' is not a valid choice for this field."
-msgid_plural "'%(value)s' are not valid choices for this field."
-msgstr[0] ""
-msgstr[1] ""
-
-#: venv/Lib/site-packages/wtforms/fields/datetime.py:50
-#, fuzzy
-msgid "Not a valid datetime value."
-msgstr "日期值无效"
-
-#: venv/Lib/site-packages/wtforms/fields/datetime.py:76
-#, fuzzy
-msgid "Not a valid date value."
-msgstr "日期值无效"
-
-#: venv/Lib/site-packages/wtforms/fields/datetime.py:102
-#, fuzzy
-msgid "Not a valid time value."
-msgstr "日期值无效"
-
-#: venv/Lib/site-packages/wtforms/fields/numeric.py:82
-#: venv/Lib/site-packages/wtforms/fields/numeric.py:92
-#, fuzzy
-msgid "Not a valid integer value."
-msgstr "日期值无效"
-
-#: venv/Lib/site-packages/wtforms/fields/numeric.py:167
-#, fuzzy
-msgid "Not a valid decimal value."
-msgstr "日期值无效"
-
-#: venv/Lib/site-packages/wtforms/fields/numeric.py:196
-#, fuzzy
-msgid "Not a valid float value."
-msgstr "日期值无效"
+#: flask_appbuilder/templates/appbuilder/general/widgets/search.html:8
+msgid "Add Filter"
+msgstr "添加过滤条件"
 
 #~ msgid ""
 #~ "The user role on the application, "
@@ -1267,4 +703,382 @@ msgstr "日期值无效"
 
 #~ msgid "Please choose one of the following providers:"
 #~ msgstr "请选择下列选项之一"
+
+#~ msgid "Emp. Number"
+#~ msgstr ""
+
+#~ msgid "Employee Number"
+#~ msgstr ""
+
+#~ msgid "List Groups"
+#~ msgstr ""
+
+#~ msgid "Manage Groups"
+#~ msgstr ""
+
+#~ msgid "List Contacts"
+#~ msgstr ""
+
+#~ msgid "Contacts Chart"
+#~ msgstr ""
+
+#~ msgid "Contacts Birth Chart"
+#~ msgstr ""
+
+#~ msgid "Tweet message"
+#~ msgstr ""
+
+#~ msgid "Test Field One"
+#~ msgstr ""
+
+#~ msgid "My form View"
+#~ msgstr ""
+
+#~ msgid "Page not found"
+#~ msgstr "尚未注册"
+
+#~ msgid "{editor}: Editing failed"
+#~ msgstr ""
+
+#~ msgid "{editor}: Editing failed: {e}"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click will abort further execution "
+#~ "because Python was configured to use "
+#~ "ASCII as encoding for the environment."
+#~ " Consult https://click.palletsprojects.com/unicode-"
+#~ "support/ for mitigation steps."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Additional information: on this system "
+#~ "no suitable UTF-8 locales were "
+#~ "discovered. This most likely requires "
+#~ "resolving by reconfiguring the locale "
+#~ "system."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This system supports the C.UTF-8 locale"
+#~ " which is recommended. You might be"
+#~ " able to resolve your issue by "
+#~ "exporting the following environment variables:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This system lists some UTF-8 supporting"
+#~ " locales that you can pick from. "
+#~ "The following suitable locales were "
+#~ "discovered: {locales}"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click discovered that you exported a "
+#~ "UTF-8 locale but the locale system "
+#~ "could not pick up from it because"
+#~ " it does not exist. The exported "
+#~ "locale is {locale!r} but it is not"
+#~ " supported."
+#~ msgstr ""
+
+#~ msgid "Aborted!"
+#~ msgstr ""
+
+#~ msgid "Show this message and exit."
+#~ msgstr ""
+
+#~ msgid "(Deprecated) {text}"
+#~ msgstr ""
+
+#~ msgid "Options"
+#~ msgstr "操作"
+
+#~ msgid "Got unexpected extra argument ({args})"
+#~ msgid_plural "Got unexpected extra arguments ({args})"
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "DeprecationWarning: The command {name!r} is deprecated."
+#~ msgstr ""
+
+#~ msgid "Commands"
+#~ msgstr ""
+
+#~ msgid "Missing command."
+#~ msgstr ""
+
+#~ msgid "No such command {name!r}."
+#~ msgstr ""
+
+#~ msgid "Value must be an iterable."
+#~ msgstr ""
+
+#~ msgid "Takes {nargs} values but 1 was given."
+#~ msgid_plural "Takes {nargs} values but {len} were given."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "env var: {var}"
+#~ msgstr ""
+
+#~ msgid "(dynamic)"
+#~ msgstr ""
+
+#~ msgid "default: {default}"
+#~ msgstr ""
+
+#~ msgid "required"
+#~ msgstr ""
+
+#~ msgid "%(prog)s, version %(version)s"
+#~ msgstr ""
+
+#~ msgid "Show the version and exit."
+#~ msgstr ""
+
+#~ msgid "Error: {message}"
+#~ msgstr ""
+
+#~ msgid "Try '{command} {option}' for help."
+#~ msgstr ""
+
+#~ msgid "Invalid value: {message}"
+#~ msgstr ""
+
+#~ msgid "Invalid value for {param_hint}: {message}"
+#~ msgstr ""
+
+#~ msgid "Missing argument"
+#~ msgstr ""
+
+#~ msgid "Missing option"
+#~ msgstr ""
+
+#~ msgid "Missing parameter"
+#~ msgstr ""
+
+#~ msgid "Missing {param_type}"
+#~ msgstr ""
+
+#~ msgid "Missing parameter: {param_name}"
+#~ msgstr ""
+
+#~ msgid "No such option: {name}"
+#~ msgstr ""
+
+#~ msgid "Did you mean {possibility}?"
+#~ msgid_plural "(Possible options: {possibilities})"
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "unknown error"
+#~ msgstr ""
+
+#~ msgid "Could not open file {filename!r}: {message}"
+#~ msgstr ""
+
+#~ msgid "Argument {name!r} takes {nargs} values."
+#~ msgstr ""
+
+#~ msgid "Option {name!r} does not take a value."
+#~ msgstr ""
+
+#~ msgid "Option {name!r} requires an argument."
+#~ msgid_plural "Option {name!r} requires {nargs} arguments."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Shell completion is not supported for Bash versions older than 4.4."
+#~ msgstr ""
+
+#~ msgid "Couldn't detect Bash version, shell completion is not supported."
+#~ msgstr ""
+
+#~ msgid "Repeat for confirmation"
+#~ msgstr "请确认"
+
+#~ msgid "Error: The value you entered was invalid."
+#~ msgstr ""
+
+#~ msgid "Error: {e.message}"
+#~ msgstr ""
+
+#~ msgid "Error: The two entered values do not match."
+#~ msgstr ""
+
+#~ msgid "Error: invalid input"
+#~ msgstr ""
+
+#~ msgid "Press any key to continue..."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Choose from:\n"
+#~ "\t{choices}"
+#~ msgstr ""
+
+#~ msgid "{value!r} is not {choice}."
+#~ msgid_plural "{value!r} is not one of {choices}."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "{value!r} does not match the format {format}."
+#~ msgid_plural "{value!r} does not match the formats {formats}."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "{value!r} is not a valid {number_type}."
+#~ msgstr ""
+
+#~ msgid "{value} is not in the range {range}."
+#~ msgstr ""
+
+#~ msgid "{value!r} is not a valid boolean."
+#~ msgstr ""
+
+#~ msgid "{value!r} is not a valid UUID."
+#~ msgstr ""
+
+#~ msgid "file"
+#~ msgstr "用户信息"
+
+#~ msgid "directory"
+#~ msgstr "编辑记录"
+
+#~ msgid "path"
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} does not exist."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is a file."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is a directory."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is not writable."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is not readable."
+#~ msgstr ""
+
+#~ msgid "{len_type} values are required, but {len_value} was given."
+#~ msgid_plural "{len_type} values are required, but {len_value} were given."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "File does not have an approved extension: {extensions}"
+#~ msgstr ""
+
+#~ msgid "File does not have an approved extension."
+#~ msgstr ""
+
+#~ msgid "File must be between {min_size} and {max_size} bytes."
+#~ msgstr ""
+
+#~ msgid "Invalid field name '%s'."
+#~ msgstr ""
+
+#~ msgid "Field must be equal to %(other_name)s."
+#~ msgstr ""
+
+#~ msgid "Field must be at least %(min)d character long."
+#~ msgid_plural "Field must be at least %(min)d characters long."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Field cannot be longer than %(max)d character."
+#~ msgid_plural "Field cannot be longer than %(max)d characters."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Field must be exactly %(max)d character long."
+#~ msgid_plural "Field must be exactly %(max)d characters long."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Field must be between %(min)d and %(max)d characters long."
+#~ msgstr ""
+
+#~ msgid "Number must be at least %(min)s."
+#~ msgstr ""
+
+#~ msgid "Number must be at most %(max)s."
+#~ msgstr ""
+
+#~ msgid "Number must be between %(min)s and %(max)s."
+#~ msgstr ""
+
+#~ msgid "Invalid input."
+#~ msgstr ""
+
+#~ msgid "Invalid email address."
+#~ msgstr ""
+
+#~ msgid "Invalid IP address."
+#~ msgstr ""
+
+#~ msgid "Invalid Mac address."
+#~ msgstr ""
+
+#~ msgid "Invalid URL."
+#~ msgstr ""
+
+#~ msgid "Invalid UUID."
+#~ msgstr ""
+
+#~ msgid "Invalid value, must be one of: %(values)s."
+#~ msgstr ""
+
+#~ msgid "Invalid value, can't be any of: %(values)s."
+#~ msgstr ""
+
+#~ msgid "Invalid CSRF Token."
+#~ msgstr ""
+
+#~ msgid "CSRF token missing."
+#~ msgstr ""
+
+#~ msgid "CSRF failed."
+#~ msgstr ""
+
+#~ msgid "CSRF token expired."
+#~ msgstr ""
+
+#~ msgid "Invalid Choice: could not coerce."
+#~ msgstr ""
+
+#~ msgid "Choices cannot be None."
+#~ msgstr ""
+
+#~ msgid "Not a valid choice."
+#~ msgstr "选择无效"
+
+#~ msgid "Invalid choice(s): one or more data inputs could not be coerced."
+#~ msgstr ""
+
+#~ msgid "'%(value)s' is not a valid choice for this field."
+#~ msgid_plural "'%(value)s' are not valid choices for this field."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Not a valid datetime value."
+#~ msgstr "日期值无效"
+
+#~ msgid "Not a valid date value."
+#~ msgstr "日期值无效"
+
+#~ msgid "Not a valid time value."
+#~ msgstr "日期值无效"
+
+#~ msgid "Not a valid integer value."
+#~ msgstr "日期值无效"
+
+#~ msgid "Not a valid decimal value."
+#~ msgstr "日期值无效"
+
+#~ msgid "Not a valid float value."
+#~ msgstr "日期值无效"
 
