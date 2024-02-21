@@ -25,13 +25,12 @@ msgstr "Отказано в доступе"
 #: flask_appbuilder/fields.py:153 flask_appbuilder/fields.py:155
 #: flask_appbuilder/fields.py:213 flask_appbuilder/fields.py:220
 #: flask_appbuilder/fields.py:279
-#, fuzzy
 msgid "Not a valid choice"
-msgstr "Дата введена неверно"
+msgstr "Неверный выбор"
 
 #: flask_appbuilder/fieldwidgets.py:157 flask_appbuilder/fieldwidgets.py:177
 msgid "Select Value"
-msgstr ""
+msgstr "Выберите значение"
 
 #: flask_appbuilder/messages.py:9
 #: flask_appbuilder/templates/appbuilder/general/charts/chart.html:8
@@ -167,7 +166,6 @@ msgid "Smaller than"
 msgstr "Меньше"
 
 #: flask_appbuilder/models/generic/filters.py:73
-#, fuzzy
 msgid "Start with"
 msgstr "Начинается с"
 
@@ -400,14 +398,12 @@ msgid "Password Changed"
 msgstr "Пароль изменен"
 
 #: flask_appbuilder/security/views.py:113
-#, fuzzy
 msgid "Edit User Information"
-msgstr "Ваши пользовательские данные"
+msgstr "Редактировать информацию о пользователе"
 
 #: flask_appbuilder/security/views.py:115
-#, fuzzy
 msgid "User information changed"
-msgstr "Ваши пользовательские данные"
+msgstr "Изменена информация о пользователе"
 
 #: flask_appbuilder/security/views.py:149
 msgid "Show User"
@@ -631,12 +627,11 @@ msgstr "Удалить запись"
 
 #: flask_appbuilder/templates/appbuilder/general/lib.html:412
 msgid "Delete"
-msgstr ""
+msgstr "Удалить"
 
 #: flask_appbuilder/templates/appbuilder/general/lib.html:419
-#, fuzzy
 msgid "Are you sure you want to delete this item?"
-msgstr "Уверены, что хотите удалить эту запись?"
+msgstr "Уверены, что хотите удалить эту элемент?"
 
 #: flask_appbuilder/templates/appbuilder/general/charts/chart_time.html:17
 msgid "Group by fields"
