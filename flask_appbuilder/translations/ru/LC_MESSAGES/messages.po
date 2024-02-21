@@ -631,7 +631,7 @@ msgstr "Удалить"
 
 #: flask_appbuilder/templates/appbuilder/general/lib.html:419
 msgid "Are you sure you want to delete this item?"
-msgstr "Уверены, что хотите удалить эту элемент?"
+msgstr "Уверены, что хотите удалить эту запись?"
 
 #: flask_appbuilder/templates/appbuilder/general/charts/chart_time.html:17
 msgid "Group by fields"
