@@ -198,4 +198,3 @@ API_SHOW_TITLE_RIS_KEY = "show_title"
 
 MICROSOFT_KEY_SET_URL = "https://login.microsoftonline.com/common/discovery/keys"
 
-DATE_FORMAT = "%d-%m-%Y"
