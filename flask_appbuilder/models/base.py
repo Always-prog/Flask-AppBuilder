@@ -119,8 +119,8 @@ class BaseInterface:
             retdict = {}
             for col in list_columns:
                 value = self._get_attr_value(item, col)
-                if isinstance(value, datetime.datetime) and current_app.config.get("DATE_FORMAT"):
-                    retdict[col] = value.strftime(current_app.config.get("DATE_FORMAT"))
+                if isinstance(value, datetime.datetime) and current_app.config.get("FAB_DATE_FORMAT"):
+                    retdict[col] = value.strftime(current_app.config.get("FAB_DATE_FORMAT"))
                 else:
                     retdict[col] = value
             retlst.append(retdict)
@@ -140,8 +140,8 @@ class BaseInterface:
             retdict = {}
             for col in list_columns:
                 value = self._get_attr_value(item, col)
-                if isinstance(value, datetime.datetime) and current_app.config.get("DATE_FORMAT"):
-                    retdict[col] = value.strftime(current_app.config.get("DATE_FORMAT"))
+                if isinstance(value, datetime.datetime) and current_app.config.get("FAB_DATE_FORMAT"):
+                    retdict[col] = value.strftime(current_app.config.get("FAB_DATE_FORMAT"))
                 else:
                     retdict[col] = value
             yield retdict
