@@ -4,7 +4,7 @@ import logging
 from typing import Any, Type
 
 from flask_babel import lazy_gettext
-from ..const import DATE_FORMAT
+from flask import current_app
 
 from .filters import BaseFilterConverter, Filters
 
@@ -119,8 +119,8 @@ class BaseInterface:
             retdict = {}
             for col in list_columns:
                 value = self._get_attr_value(item, col)
-                if isinstance(value, datetime.datetime):
-                    retdict[col] = value.strftime(DATE_FORMAT)
+                if isinstance(value, datetime.datetime) and current_app.config.get("DATE_FORMAT"):
+                    retdict[col] = value.strftime(current_app.config.get("DATE_FORMAT"))
                 else:
                     retdict[col] = value
             retlst.append(retdict)
@@ -140,8 +140,8 @@ class BaseInterface:
             retdict = {}
             for col in list_columns:
                 value = self._get_attr_value(item, col)
-                if isinstance(value, datetime.datetime):
-                    retdict[col] = value.strftime(DATE_FORMAT)
+                if isinstance(value, datetime.datetime) and current_app.config.get("DATE_FORMAT"):
+                    retdict[col] = value.strftime(current_app.config.get("DATE_FORMAT"))
                 else:
                     retdict[col] = value
             yield retdict
