@@ -16,7 +16,7 @@ except ImportError:
     _has_enum = False
 
 log = logging.getLogger(__name__)
-
+raise Exception("Not implemented")
 
 class BaseInterface:
     """
