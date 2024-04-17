@@ -140,7 +140,6 @@ class BaseInterface:
             retdict = {}
             for col in list_columns:
                 value = self._get_attr_value(item, col)
-                log.error(current_app.config.get("DATE_FORMAT"))
                 if isinstance(value, datetime.datetime) and current_app.config.get("DATE_FORMAT"):
                     retdict[col] = value.strftime(current_app.config.get("DATE_FORMAT"))
                 else:
