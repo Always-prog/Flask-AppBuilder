@@ -4,7 +4,7 @@ import re
 from typing import Any, Callable, Dict, List, Optional, Set, Tuple, Union
 
 from flask import Flask, g, session, url_for
-from flask_appbuilder.exceptions import OAuthProviderUnknown
+from flask_appbuilder.exceptions import InvalidLoginAttempt, OAuthProviderUnknown
 from flask_babel import lazy_gettext as _
 from flask_jwt_extended import current_user as current_user_jwt
 from flask_jwt_extended import JWTManager
@@ -258,6 +258,9 @@ class BaseSecurityManager(AbstractSecurityManager):
             app.config.setdefault("AUTH_LDAP_LASTNAME_FIELD", "sn")
             app.config.setdefault("AUTH_LDAP_EMAIL_FIELD", "mail")
 
+        if self.auth_type == AUTH_REMOTE_USER:
+            app.config.setdefault("AUTH_REMOTE_USER_ENV_VAR", "REMOTE_USER")
+
         # Rate limiting
         app.config.setdefault("AUTH_RATE_LIMITED", False)
         app.config.setdefault("AUTH_RATE_LIMIT", "10 per 20 second")
@@ -265,7 +268,12 @@ class BaseSecurityManager(AbstractSecurityManager):
         if self.auth_type == AUTH_OID:
             from flask_openid import OpenID
 
+            log.warning(
+                "AUTH_OID is deprecated and will be removed in version 5. "
+                "Migrate to other authentication methods."
+            )
             self.oid = OpenID(app)
+
         if self.auth_type == AUTH_OAUTH:
             from authlib.integrations.flask_client import OAuth
 
@@ -414,6 +422,10 @@ class BaseSecurityManager(AbstractSecurityManager):
     @property
     def auth_user_registration_role_jmespath(self) -> str:
         return self.appbuilder.get_app.config["AUTH_USER_REGISTRATION_ROLE_JMESPATH"]
+
+    @property
+    def auth_remote_user_env_var(self) -> str:
+        return self.appbuilder.get_app.config["AUTH_REMOTE_USER_ENV_VAR"]
 
     @property
     def auth_roles_mapping(self) -> Dict[str, List[str]]:
@@ -680,6 +692,18 @@ class BaseSecurityManager(AbstractSecurityManager):
                 "last_name": data.get("family_name", ""),
                 "email": data.get("email", ""),
             }
+        # for Authentik
+        if provider == "authentik":
+            id_token = resp["id_token"]
+            me = self._get_authentik_token_info(id_token)
+            log.debug("User info from authentik: %s", me)
+            return {
+                "email": me["preferred_username"],
+                "first_name": me.get("given_name", ""),
+                "username": me["nickname"],
+                "role_keys": me.get("groups", []),
+            }
+
         raise OAuthProviderUnknown()
 
     def _get_microsoft_jwks(self) -> List[Dict[str, Any]]:
@@ -700,6 +724,48 @@ class BaseSecurityManager(AbstractSecurityManager):
             return claims
 
         return jwt.decode(id_token, options={"verify_signature": False})
+
+    def _get_authentik_jwks(self, jwks_url) -> dict:
+        import requests
+
+        resp = requests.get(jwks_url)
+        if resp.status_code == 200:
+            return resp.json()
+        return False
+
+    def _validate_jwt(self, id_token, jwks):
+        from authlib.jose import JsonWebKey, jwt as authlib_jwt
+
+        keyset = JsonWebKey.import_key_set(jwks)
+        claims = authlib_jwt.decode(id_token, keyset)
+        claims.validate()
+        log.info("JWT token is validated")
+        return claims
+
+    def _get_authentik_token_info(self, id_token):
+        me = jwt.decode(id_token, options={"verify_signature": False})
+
+        verify_signature = self.oauth_remotes["authentik"].client_kwargs.get(
+            "verify_signature", True
+        )
+        if verify_signature:
+            # Validate the token using authentik certificate
+            jwks_uri = self.oauth_remotes["authentik"].server_metadata.get("jwks_uri")
+            if jwks_uri:
+                jwks = self._get_authentik_jwks(jwks_uri)
+                if jwks:
+                    return self._validate_jwt(id_token, jwks)
+            else:
+                log.error(
+                    "jwks_uri not specified in OAuth Providers, "
+                    "could not verify token signature"
+                )
+        else:
+            # Return the token info without validating
+            log.warning("JWT token is not validated!")
+            return me
+
+        raise InvalidLoginAttempt("OAuth signature verify failed")
 
     def register_views(self):
         if not self.appbuilder.app.config.get("FAB_ADD_SECURITY_VIEWS", True):
@@ -2088,14 +2154,17 @@ class BaseSecurityManager(AbstractSecurityManager):
         raise NotImplementedError
 
     def load_user(self, pk):
-        return self.get_user_by_id(int(pk))
+        user = self.get_user_by_id(int(pk))
+        if user.is_active:
+            return user
 
     def load_user_jwt(self, _jwt_header, jwt_data):
         identity = jwt_data["sub"]
         user = self.load_user(identity)
-        # Set flask g.user to JWT user, we can't do it on before request
-        g.user = user
-        return user
+        if user.is_active:
+            # Set flask g.user to JWT user, we can't do it on before request
+            g.user = user
+            return user
 
     @staticmethod
     def before_request():
