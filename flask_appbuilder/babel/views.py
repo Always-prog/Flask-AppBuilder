@@ -1,4 +1,4 @@
-from flask import abort, redirect, session
+from flask import request, abort, redirect, session
 from flask_babel import refresh
 
 from ..baseviews import BaseView, expose
@@ -16,4 +16,5 @@ class LocaleView(BaseView):
         session["locale"] = locale
         refresh()
         self.update_redirect()
-        return redirect(self.get_redirect())
+        redirect_url = request.referrer or self.get_redirect()
+        return redirect(redirect_url)
