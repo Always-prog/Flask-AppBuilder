@@ -1199,6 +1199,11 @@ class BaseCRUDView(BaseModelView):
         item = self.datamodel.get(pk, self._base_filters)
         if not item:
             abort(404)
+
+        value_datetime = getattr(item, "dttm", None)
+        if value_datetime:
+            item.dttm = value_datetime.strftime(current_app.config.get("FAB_DATE_FORMAT"))
+
         widgets = self._get_show_widget(pk, item)
         self.update_redirect()
         return self._get_related_views_widgets(
