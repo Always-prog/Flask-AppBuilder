@@ -1202,7 +1202,7 @@ class BaseCRUDView(BaseModelView):
 
         value_datetime = getattr(item, "dttm", None)
         if value_datetime:
-            item.dttm = value_datetime.strftime(current_app.config.get("FAB_DATE_FORMAT"))
+            item.dttm = value_datetime.strftime(current_app.config.get("TIMESTAMP_FORMAT"))
 
         widgets = self._get_show_widget(pk, item)
         self.update_redirect()
